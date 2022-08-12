@@ -2,9 +2,9 @@
 
 /* Fonctionnement ohmyfood */
 
-@media all and (min-width: 769px) {
+@media all and (min-width: 768px) {
 
-    .flexbox-fonctionnement-ohmyfood {
+    .flexbox-fonctionnement-responsive {
         flex-direction: row;
         justify-content: space-around;
     }
@@ -12,7 +12,6 @@
     .conteneur-fonctionnement {
         width: 100%;
         white-space: nowrap;
-        margin: 0px 0px 25px 10px;
     }
 
     .flexbox-blocs-fonctionnement {
@@ -21,14 +20,36 @@
 
 }
 
-@media all and (min-width: 825px) {
-
-    .conteneur-fonctionnement {
-        margin: 0px 20px 25px 20px;
-    }
+@media all and (min-width: 865px) {
 
     .flexbox-blocs-fonctionnements {
         gap: 20px;
+    }
+
+}
+
+/* Restaurants disponibles */
+
+@media all and (min-width: 768px) {
+
+    .flexbox-restaurants-global {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .conteneur-restaurants {
+        width: 45%;
+    }
+
+}
+
+/* Footer */
+
+@media all and (min-width: 768px) {
+
+    .flex-footer {
+        align-items: center;
+        width: 100%;
     }
 
 }
