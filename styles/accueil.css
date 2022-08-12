@@ -11,6 +11,12 @@ body {
     --menthe: #99E2D0;
 }
 
+* {
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres Webkit */
+}
+
 /* Classes utilisées plusieurs fois */
 
 .flexbox-justify-align-center {
@@ -33,6 +39,15 @@ body {
 
 .couleur-blanc {
     color: white;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.suppression-margin {
+    margin: 0;
 }
 
 /* Header */
@@ -60,7 +75,7 @@ body {
 }
 
 .bouton-explorer {
-    background: linear-gradient(var(--rose), var(--violet));
+    background-image: linear-gradient(var(--rose), var(--violet));
     padding: 15px 20px;
     font-size: medium;
     border: none;
@@ -100,11 +115,6 @@ body {
     cursor: pointer;
 }
 
-.flexbox-fonctionnement-ohmyfood {
-    display: flex;
-    flex-direction: column;
-}
-
 .flexbox-blocs-fonctionnement {
     display: flex;
     align-items: center;
@@ -130,9 +140,138 @@ body {
 
 .position-conteneur-restaurants {
     margin-top: 45px;
+    padding-bottom: 60px;
 }
 
 .position-titre-restaurants {
     padding-top: 45px;
     padding-left: 20px;
+}
+
+.flexbox-restaurants-global {
+    align-items: center;
+    gap: 1.375rem;
+}
+
+.conteneur-restaurants {
+    width: 90%;
+    background-color: white;
+    border-radius: 0.9375rem;
+    box-shadow: 0rem 0.125rem 0.3125rem 0.25rem rgb(235, 235, 235);
+}
+
+.conteneur-restaurants:hover {
+    cursor: pointer;
+}
+
+.photos-restaurants-disponibles {
+    height: 12.5rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.625rem 0.625rem 0rem 0rem;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.nouveau-restaurant {
+    background-color: var(--menthe);
+    color: darkgreen;
+    padding: 0.375rem;
+    border-radius: 0.1875rem;
+    position: absolute;
+    top: 7%;
+    right: 3%;
+}
+
+.position-icone-coeur {
+    position: absolute;
+    right: 7%;
+    top: 25%;
+}
+
+.taille-icone-coeur {
+    font-size: 1.6em;
+}
+
+.informations-restaurants-disponibles {
+    gap: 0.3125rem;
+    margin-left: 0.9375rem;
+}
+
+.padding-titre-restaurants {
+    padding-top: 0.9375rem;
+}
+
+.padding-paragraphe-restaurants {
+    padding-bottom: 1.25rem;
+}
+
+.classe-icone {
+    font-size: 2em;
+    position: absolute;
+    right: 7%;
+    top: 25%;
+}
+
+.fas {
+    color: transparent;
+    background-image: linear-gradient(var(--violet), var(--rose));
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.fas:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    background-color: rgb(53, 53, 53);
+    padding: 30px 0px 25px 0px;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.titre-footer-ohmyfood {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 1.17em;
+    padding-bottom: 15px;
+    padding-left: 30px;
+}
+
+ul {
+    list-style-type: none;
+    gap: 10px;
+    padding-left: 30px
+}
+
+.align-center-li {
+    display: flex;
+    align-items: center;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+footer p:hover {
+    cursor: pointer;
+}
+
+.gap-footer-1 {
+    gap: 16.5px;
+}
+
+.gap-footer-2 {
+    gap: 10px;
 }
