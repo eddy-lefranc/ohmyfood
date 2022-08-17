@@ -276,6 +276,11 @@ footer {
     padding: 30px 0px 25px 0px;
 }
 
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+}
+
 .titre-footer-ohmyfood {
     font-family: 'Shrikhand', sans-serif;
     font-size: 1.17em;
