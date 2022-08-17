@@ -47,7 +47,7 @@
 
 @media all and (min-width: 768px) {
 
-    .flex-column {
+    .flex-footer {
         align-items: center;
         width: 100%;
     }
