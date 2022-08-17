@@ -13,12 +13,16 @@
   <title>ohmyfood</title>
 </head>
 
-<body>
-  <header>
-    <!-- Logo ohmyfood -->
-    <div class="hauteur-50px flexbox-justify-align-center">
-      <img src="images/logo/ohmyfood.png" alt="logo-ohmyfood" class="logo" />
+<body class="suppression-margin">
+  <!-- Loading Spinner-->
+  <div class="loader flexbox-justify-align-center fond-gris-clair position-fixed">
+    <div class="spinner hauteur-50px position-fixed">
     </div>
+  </div>
+  <!-- Logo ohmyfood -->
+  <div class="hauteur-50px flexbox-justify-align-center">
+    <img src="pictures/logo/ohmyfood.png" alt="logo-ohmyfood" class="logo" />
+  </div>
   </header>
   <main>
     <!-- Localisation utilisateur -->
@@ -32,108 +36,108 @@
         <br />vous convient</h1>
       <p>Découvrez des restaurants d'exception,
         <br />sélectionnés par nos soins.</p>
-      <div class="conteneur-bouton-explorer padding-top-20px">
-        <button class="bouton-explorer couleur-blanc">Explorer nos restaurants</button>
+      <div class="padding-top-20px">
+        <button class="bouton-explorer couleur-blanc font-size-medium">Explorer nos restaurants</button>
       </div>
     </section>
     <!-- Fonctionnement ohmyfood -->
-    <section class="fonctionnement-ohmyfood">
+    <section class="margin-top-45px">
       <h2 class="position-titre-fonctionnement">Fonctionnement</h2>
       <div class="flex-column flexbox-fonctionnement-responsive">
         <div class="conteneur-fonctionnement fond-gris-clair">
-          <div class="flexbox-blocs-fonctionnement">
+          <div class="display-align-center gap-blocs-fonctionnement">
             <div class="position-cercle-fonctionnement">
               <span class="cercle-chiffres-fonctionnement couleur-blanc flexbox-justify-align-center">1</span>
             </div>
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <h3 class="taille-titre-fonctionnement">Choisissez un restaurant</h3>
+            <i class="fa-solid fa-mobile-screen-button couleur-icones-fonctionnement"></i>
+            <h3 class="taille-titre-fonctionnement font-size-medium">Choisissez un restaurant</h3>
           </div>
         </div>
         <div class="conteneur-fonctionnement fond-gris-clair">
-          <div class="flexbox-blocs-fonctionnement">
+          <div class="display-align-center gap-blocs-fonctionnement">
             <div class="position-cercle-fonctionnement">
               <span class="cercle-chiffres-fonctionnement couleur-blanc flexbox-justify-align-center">2</span>
             </div>
-            <i class="fa-solid fa-list-ul"></i>
-            <h3 class="taille-titre-fonctionnement">Composez votre menu</h3>
+            <i class="fa-solid fa-list-ul couleur-icones-fonctionnement"></i>
+            <h3 class="taille-titre-fonctionnement font-size-medium">Composez votre menu</h3>
           </div>
         </div>
         <div class="conteneur-fonctionnement fond-gris-clair">
-          <div class="flexbox-blocs-fonctionnement">
+          <div class="display-align-center gap-blocs-fonctionnement">
             <div class="position-cercle-fonctionnement">
               <span class="cercle-chiffres-fonctionnement couleur-blanc flexbox-justify-align-center">3</span>
             </div>
-            <i class="fa-solid fa-store couleur-icone-restaurant"></i>
-            <h3 class="taille-titre-fonctionnement">Dégustez au restaurant</h3>
+            <i class="fa-solid fa-store couleur-icones-fonctionnement"></i>
+            <h3 class="taille-titre-fonctionnement font-size-medium">Dégustez au restaurant</h3>
           </div>
         </div>
       </div>
     </section>
     <!-- Restaurants disponibles -->
-    <section class="position-conteneur-restaurants fond-gris-clair">
+    <section class="position-conteneur-restaurants margin-top-45px fond-gris-clair">
       <div class="position-titre-restaurants">
         <h2>Restaurants</h2>
       </div>
       <div class="flex-column flexbox-restaurants-global">
         <!-- Bloc 'La palette du goût' -->
-        <div class="conteneur-restaurants">
+        <article class="conteneur-restaurants">
           <div class="position-relative">
-            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo-la-palette-du-gout" class="photos-restaurants-disponibles" />
-            <span class="nouveau-restaurant">Nouveau</span>
+            <img src="pictures/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo-la-palette-du-gout" class="photos-restaurants-disponibles" />
+            <span class="nouveau-restaurant position-absolute">Nouveau</span>
           </div>
           <div class="flex-column position-relative informations-restaurants-disponibles">
             <h3 class="suppression-margin padding-titre-restaurants">La palette du goût</h3>
             <p class="suppression-margin padding-paragraphe-restaurants">Ménilmontant</p>
-            <i class="far fa-heart classe-icone"></i>
-            <i class="fas fa-heart classe-icone"></i>
+            <i class="far fa-heart classe-icone position-absolute"></i>
+            <i class="fas fa-heart classe-icone position-absolute"></i>
           </div>
-        </div>
+        </article>
         <!-- Bloc 'La note enchantée' -->
-        <div class="conteneur-restaurants">
+        <article class="conteneur-restaurants">
           <div class="position-relative">
-            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo-la-note-enchantee" class="photos-restaurants-disponibles" />
-            <span class="nouveau-restaurant">Nouveau</span>
+            <img src="pictures/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo-la-note-enchantee" class="photos-restaurants-disponibles" />
+            <span class="nouveau-restaurant position-absolute">Nouveau</span>
           </div>
           <div class="flex-column position-relative informations-restaurants-disponibles">
             <h3 class="suppression-margin padding-titre-restaurants">La note enchantée</h3>
             <p class="suppression-margin padding-paragraphe-restaurants">Charonne</p>
-            <i class="far fa-heart classe-icone"></i>
-            <i class="fas fa-heart classe-icone"></i>
+            <i class="far fa-heart classe-icone position-absolute"></i>
+            <i class="fas fa-heart classe-icone position-absolute"></i>
           </div>
-        </div>
+        </article>
         <!-- Bloc 'À la française' -->
-        <div class="conteneur-restaurants">
-          <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo-a-la-francaise" class="photos-restaurants-disponibles" />
+        <article class="conteneur-restaurants">
+          <img src="pictures/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo-a-la-francaise" class="photos-restaurants-disponibles" />
           <div class="flex-column position-relative informations-restaurants-disponibles">
             <h3 class="suppression-margin padding-titre-restaurants">À la française</h3>
             <p class="suppression-margin padding-paragraphe-restaurants">Cité Rouge</p>
-            <i class="far fa-heart classe-icone"></i>
-            <i class="fas fa-heart classe-icone"></i>
+            <i class="far fa-heart classe-icone position-absolute"></i>
+            <i class="fas fa-heart classe-icone position-absolute"></i>
           </div>
-        </div>
+        </article>
         <!-- Bloc 'Le délice des sens' -->
-        <div class="conteneur-restaurants">
-          <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo-le-delice-des-sens" class="photos-restaurants-disponibles" />
+        <article class="conteneur-restaurants">
+          <img src="pictures/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo-le-delice-des-sens" class="photos-restaurants-disponibles" />
           <div class="flex-column position-relative informations-restaurants-disponibles">
             <h3 class="suppression-margin padding-titre-restaurants">Le délice des sens</h3>
             <p class="suppression-margin padding-paragraphe-restaurants">Folie-Méricourt</p>
-            <i class="far fa-heart classe-icone"></i>
-            <i class="fas fa-heart classe-icone"></i>
+            <i class="far fa-heart classe-icone position-absolute"></i>
+            <i class="fas fa-heart classe-icone position-absolute"></i>
           </div>
-        </div>
+        </article>
       </div>
     </section>
   </main>
   <!-- Footer -->
   <footer class="couleur-blanc">
-    <div class="flex-footer">
+    <div class="flex-column">
       <span class="titre-footer-ohmyfood">ohmyfood</span>
-      <ul class="flex-footer">
-        <li class="align-center-li gap-footer-1">
+      <ul class="flex-column gap-10px">
+        <li class="display-align-center gap-footer-1">
           <i class="fa-solid fa-utensils"></i>
           <p class="suppression-margin">Proposer un restaurant</p>
         </li>
-        <li class="align-center-li gap-footer-2">
+        <li class="display-align-center gap-10px">
           <i class="fa-solid fa-handshake-angle"></i>
           <p class="suppression-margin">Devenir partenaire</p>
         </li>
