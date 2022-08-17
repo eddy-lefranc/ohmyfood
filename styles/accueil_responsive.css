@@ -14,7 +14,7 @@
         white-space: nowrap;
     }
 
-    .flexbox-blocs-fonctionnement {
+    .gap-blocs-fonctionnement {
         gap: 10px;
     }
 
@@ -22,7 +22,7 @@
 
 @media all and (min-width: 865px) {
 
-    .flexbox-blocs-fonctionnements {
+    .gap-blocs-fonctionnement {
         gap: 20px;
     }
 
@@ -47,7 +47,7 @@
 
 @media all and (min-width: 768px) {
 
-    .flex-footer {
+    .flex-column {
         align-items: center;
         width: 100%;
     }
