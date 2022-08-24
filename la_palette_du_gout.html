@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles/menu.css" />
+    <link rel="stylesheet" type="text/css" href="styles/menu_responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet" />
@@ -12,14 +13,167 @@
     <title>Menu - La palette du goût</title>
 </head>
 
-<body>
+<body class="suppression-margin">
     <header>
-        <!-- Logo ohmyfood -->
-        <div>
-            <i class="fa-solid fa-arrow-left"></i>
-            <img src="images/logo/ohmyfood.png" alt="logo-ohmyfood" class="logo" />
-        </div>
+      <!-- Logo ohmyfood -->
+      <div class="conteneur-header flexbox-justify-align-center position-relative">
+        <a href="../ohmyfood/index.html">
+          <i class="fa-solid fa-arrow-left fa-lg position-icone-header position-absolute"></i>
+        </a>
+        <img src="images/logo/ohmyfood.png" alt="logo-ohmyfood" class="logo" />
+      </div>
     </header>
-</body>
-
-</html>
+    <main>
+      <!-- Photo du restaurant -->
+      <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo-la-palette-du-gout" class="photo-restaurant" />
+      <!-- Menu du restaurant -->
+      <section class="menu-restaurant-global position-relative">
+        <div class="display-align-center position-relative">
+          <h2 class="proprietes-titre-restaurant font-shrikhand">La palette du goût</h2>
+          <i class="far fa-heart icone-coeur position-absolute"></i>
+          <i class="fas fa-heart icone-coeur position-absolute"></i>
+        </div>
+        <section class="margin-bottom-40px">
+          <!-- Entrées -->
+          <h3 class="entrees-plats-desserts">ENTRÉES
+            <div class="bordure">
+            </div>
+          </h3>
+          <article class="conteneur-articles margin-bottom-20px position-relative">
+            <h3 class="suppression-margin line-height-30px texte-nowrap">Fricassée d'escargot</h3>
+            <div class="flexbox-paragraphe-prix">
+              <p class="suppression-margin texte-nowrap">Au piment d'espelette</p>
+              <div class="font-weight-bold position-prix">25€</div>
+            </div>
+            <div class="conteneur-coche position-absolute flexbox-justify-align-center">
+              <i class="fa-solid fa-circle-check fa-xl couleur-blanc"></i>
+            </div>
+          </article>
+          <article class="conteneur-articles margin-bottom-20px position-relative">
+            <h3 class="suppression-margin line-height-30px texte-nowrap">Foie gras de canard mi-cuit</h3>
+            <div class="flexbox-paragraphe-prix">
+              <p class="suppression-margin texte-nowrap">Et ses copeaux de truffe noire</p>
+              <div class="font-weight-bold position-prix">35€</div>
+            </div>
+            <div class="conteneur-coche position-absolute flexbox-justify-align-center">
+              <i class="fa-solid fa-circle-check fa-xl couleur-blanc"></i>
+            </div>
+          </article>
+          <article class="conteneur-articles position-relative">
+            <h3 class="suppression-margin line-height-30px texte-nowrap">Oeuf au plat</h3>
+            <div class="flexbox-paragraphe-prix">
+              <p class="suppression-margin texte-nowrap">Assaisonné à la truffe sur lit de...</p>
+              <div class="font-weight-bold position-prix">20€</div>
+            </div>
+            <div class="conteneur-coche position-absolute flexbox-justify-align-center">
+              <i class="fa-solid fa-circle-check fa-xl couleur-blanc"></i>
+            </div>
+          </article>
+        </section>
+        <section class="margin-bottom-40px">
+          <!-- Plats -->
+          <h3 class="entrees-plats-desserts">PLATS
+            <div class="bordure">
+            </div>
+          </h3>
+          <article class="conteneur-articles margin-bottom-20px position-relative">
+            <h3 class="suppression-margin line-height-30px texte-nowrap">Filet de boeuf aux herbes</h3>
+            <div class="flexbox-paragraphe-prix">
+              <p class="suppression-margin texte-nowrap">Accompagné de sa ribambelle de légu...</p>
+              <div class="font-weight-bold position-prix">40€</div>
+            </div>
+            <div class="conteneur-coche position-absolute flexbox-justify-align-center">
+              <i class="fa-solid fa-circle-check fa-xl couleur-blanc"></i>
+            </div>
+          </article>
+          <article class="conteneur-articles margin-bottom-20px position-relative">
+            <h3 class="suppression-margin line-height-30px texte-nowrap">Parmentier de queue de boeuf</h3>
+            <div class="flexbox-paragraphe-prix">
+              <p class="suppression-margin texte-nowrap">À la truffe noire sur purée de panais</p>
+              <div class="font-weight-bold position-prix">35€</div>
+            </div>
+            <div class="conteneur-coche position-absolute flexbox-justify-align-center">
+              <i class="fa-solid fa-circle-check fa-xl couleur-blanc"></i>
+            </div>
+          </article>
+          <article class="conteneur-articles position-relative">
+            <h3 class="suppression-margin line-height-30px texte-nowrap">Filet de Turbot</h3>
+            <div class="flexbox-paragraphe-prix">
+              <p class="suppression-margin texte-nowrap">Aux agrumes</p>
+              <div class="font-weight-bold position-prix">44€</div>
+            </div>
+            <div class="conteneur-coche position-absolute flexbox-justify-align-center">
+              <i class="fa-solid fa-circle-check fa-xl couleur-blanc"></i>
+            </div>
+          </article>
+        </section>
+        <section>
+          <!-- Desserts -->
+          <h3 class="entrees-plats-desserts">DESSERTS
+            <div class="bordure">
+            </div>
+          </h3>
+          <article class="conteneur-articles margin-bottom-20px position-relative">
+            <h3 class="suppression-margin line-height-30px texte-nowrap">Paris-Brest</h3>
+            <div class="flexbox-paragraphe-prix">
+              <p class="suppression-margin texte-nowrap">Revisité</p>
+              <div class="font-weight-bold position-prix">18€</div>
+            </div>
+            <div class="conteneur-coche position-absolute flexbox-justify-align-center">
+              <i class="fa-solid fa-circle-check fa-xl couleur-blanc"></i>
+            </div>
+          </article>
+          <article class="conteneur-articles margin-bottom-20px position-relative">
+            <h3 class="suppression-margin line-height-30px texte-nowrap">Macaron au chocolat d'exception</h3>
+            <div class="flexbox-paragraphe-prix">
+              <p class="suppression-margin texte-nowrap">Et glace à la vanille de Madagascar</p>
+              <div class="font-weight-bold position-prix">22€</div>
+            </div>
+            <div class="conteneur-coche position-absolute flexbox-justify-align-center">
+              <i class="fa-solid fa-circle-check fa-xl couleur-blanc"></i>
+            </div>
+          </article>
+          <article class="conteneur-articles position-relative">
+            <h3 class="suppression-margin line-height-30px texte-nowrap">Mousse au chocolat</h3>
+            <div class="flexbox-paragraphe-prix">
+              <p class="suppression-margin texte-nowrap">Au piment d'espelette et à la truffe noire</p>
+              <div class="font-weight-bold position-prix">23€</div>
+            </div>
+            <div class="conteneur-coche position-absolute flexbox-justify-align-center">
+              <i class="fa-solid fa-circle-check fa-xl couleur-blanc"></i>
+            </div>
+          </article>
+        </section>
+        <!-- Bouton 'Commander' -->
+        <div class="position-bouton-commander flexbox-justify-align-center">
+          <button class="bouton-commander couleur-blanc">Commander</button>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="couleur-blanc">
+      <div class="flex-footer">
+        <div class="proprietes-footer-ohmyfood font-shrikhand">ohmyfood</div>
+        <ul class="flex-footer gap-10px">
+          <li class="display-align-center gap-footer">
+            <i class="fa-solid fa-utensils"></i>
+            <p class="suppression-margin">Proposer un restaurant</p>
+          </li>
+          <li class="display-align-center gap-10px">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <p class="suppression-margin">Devenir partenaire</p>
+          </li>
+          <li>
+            <p class="suppression-margin">Mentions légales</p>
+          </li>
+          <li>
+            <p class="suppression-margin">
+              <a href="mailto:ohmyfood@gmail.com" class="couleur-blanc text-decoration-none">Contact</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  
+  </html>
