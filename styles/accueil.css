@@ -258,7 +258,6 @@ header {
 }
 
 .informations-restaurants-disponibles {
-    gap: 0.3125rem;
     margin-left: 0.9375rem;
 }
 
@@ -268,6 +267,7 @@ header {
 
 .padding-paragraphe-restaurants {
     padding-bottom: 1.25rem;
+    padding-top: 0.3125rem;
 }
 
 .classe-icone {
