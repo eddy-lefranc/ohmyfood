@@ -1,0 +1,47 @@
+/* Corps de la page */
+
+/* Menu du restaurant */
+
+@media all and (max-width: 285px) {
+
+    .proprietes-titre-restaurant {
+        margin-left: 0px;
+    }
+
+}
+
+@media all and (max-width: 300px) {
+
+    .conteneur-articles h3, p {
+        font-size: 0.9375em;
+    }
+
+}
+
+@media all and (max-width: 320px) {
+
+    .icone-coeur {
+        right: 3%;
+    }
+
+}
+
+@media all and (min-width: 768px) {
+
+    .icone-coeur {
+        right: 3%;
+    }
+
+    .conteneur-articles {
+        width: 96%;
+    }
+
+}
+
+@media all and (min-width: 992px) {
+
+    .conteneur-articles {
+        width: 97%;
+    }
+
+}
