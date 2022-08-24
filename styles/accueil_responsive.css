@@ -42,14 +42,3 @@
     }
 
 }
-
-/* Footer */
-
-@media all and (min-width: 768px) {
-
-    .flex-footer {
-        align-items: center;
-        width: 100%;
-    }
-
-}
