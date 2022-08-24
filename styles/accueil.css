@@ -16,6 +16,11 @@ body {
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres Webkit */
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 /* Classes utilisées plusieurs fois */
 
 .flexbox-justify-align-center {
@@ -114,6 +119,10 @@ body {
 }
 
 /* Header */
+
+header {
+    height: 63px;
+}
 
 .logo {
     width: 150px;
