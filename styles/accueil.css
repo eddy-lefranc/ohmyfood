@@ -23,26 +23,12 @@ a {
 
 /* Classes utilisées plusieurs fois */
 
+/* Classes flexbox */
+
 .flexbox-justify-align-center {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hauteur-50px {
-    height: 50px;
-}
-
-.padding-top-20px {
-    padding-top: 20px;
-}
-
-.fond-gris-clair {
-    background-color: rgb(246, 246, 246);
-}
-
-.couleur-blanc {
-    color: white;
 }
 
 .flex-column {
@@ -50,25 +36,19 @@ a {
     flex-direction: column;
 }
 
-.suppression-margin {
-    margin: 0;
-}
-
-.position-fixed {
-    position: fixed;
-}
-
-.font-size-medium {
-    font-size: medium;
-}
-
-.margin-top-45px {
-    margin-top: 45px;
-}
-
 .display-align-center {
     display: flex;
     align-items: center;
+}
+
+.gap-10px {
+    gap: 10px;
+}
+
+/* Classes positions (absolute, relative) */
+
+.position-fixed {
+    position: fixed;
 }
 
 .position-relative {
@@ -79,9 +59,42 @@ a {
     position: absolute;
 }
 
-.gap-10px {
-    gap: 10px;
+/* Classes margin/padding */
+
+.padding-top-20px {
+    padding-top: 20px;
 }
+
+.suppression-margin {
+    margin: 0;
+}
+
+.margin-top-45px {
+    margin-top: 45px;
+}
+
+/* Classes couleurs */
+
+.fond-gris-clair {
+    background-color: rgb(246, 246, 246);
+}
+
+.couleur-blanc {
+    color: white;
+}
+
+/* Autres classes */
+
+.hauteur-50px {
+    height: 50px;
+}
+
+
+.font-size-medium {
+    font-size: medium;
+}
+
+/* FIN DES CLASSES UTILISEES PLUSIEURS FOIS - DEBUT DU CODE CSS POUR LE PROJET CI-DESSOUS */
 
 /* Loading Spinner */
 
