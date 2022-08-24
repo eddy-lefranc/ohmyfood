@@ -1,0 +1,309 @@
+/* Général */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --couleur-primaire: #9356DC;
+    --couleur-secondaire: #FF79DA;
+    --couleur-tertiaire: #99E2D0;
+}
+
+* {
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres Webkit */
+}
+
+/* Classes utilisées plusieurs fois */
+
+/* Classes flexbox */
+
+.flexbox-justify-align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-align-center {
+    display: flex;
+    align-items: center;
+}
+
+/* Classes positions (absolute, relative) */
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+/* Classes liées à la police/texte */
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.line-height-30px {
+    line-height: 30px;
+}
+
+.font-shrikhand {
+    font-family: 'Shrikhand', sans-serif;
+}
+
+.texte-nowrap {
+    white-space: nowrap;
+}
+
+/* Classes margin */
+
+.suppression-margin {
+    margin: 0;
+}
+
+.margin-bottom-20px {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-40px {
+    margin-bottom: 40px;
+}
+
+/* Autres classes */
+
+.couleur-blanc {
+    color: white;
+}
+
+/* FIN DES CLASSES UTILISEES PLUSIEURS FOIS - DEBUT DU CODE CSS POUR LE PROJET CI-DESSOUS */
+
+/* Header */
+
+.conteneur-header {
+    height: 63px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.position-icone-header {
+    left: 7%;
+}
+
+a {
+    color: black;
+}
+
+/* Corps de la page */
+
+.photo-restaurant {
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+/* Menu du restaurant */
+
+.menu-restaurant-global {
+    margin-top: -52px;
+    border-radius: 45px 45px 0px 0px;
+    background-color: rgb(246, 246, 246);
+}
+
+.proprietes-titre-restaurant {
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.icone-coeur {
+    font-size: 2em;
+    right: 12%;
+}
+
+.fas {
+    color: transparent;
+    background-image: linear-gradient(var(--couleur-primaire), var(--couleur-secondaire));
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.fas:hover {
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.entrees-plats-desserts {
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.bordure {
+    border-bottom: 4px solid var(--couleur-tertiaire);
+    width: 13%;
+    padding-bottom: 1%;
+}
+
+.conteneur-articles {
+    box-shadow: 0px 5px 12px 5px rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    width: 93%;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 15px;
+    padding-left: 5px;
+    animation: slideDown 3s;
+    overflow: hidden;
+}
+
+.flexbox-paragraphe-prix {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.position-prix {
+    padding-right: 25px;
+}
+
+/* Animation 'Apparition progressive des menus' */
+
+@keyframes slideDown {
+    from {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0%);
+        opacity: 1;
+    }
+}
+
+/* Coche menu et animation */
+
+.conteneur-coche {
+    height: 80px;
+    width: 70px;
+    background-color: var(--couleur-tertiaire);
+    border-radius: 0px 15px 15px 0px;
+    right: -70px;
+    visibility: hidden;
+}
+
+@keyframes slideLeft {
+    to {
+        transform: translateX(-70px);
+        visibility: visible;
+    }
+}
+
+.conteneur-articles:hover .conteneur-coche {
+    animation: slideLeft 500ms forwards;
+}
+
+.conteneur-articles:hover .position-prix {
+    padding-left: 15px;
+    padding-right: 90px;
+    transition: 500ms ease;
+}
+
+@keyframes iconSpin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.conteneur-articles:hover .conteneur-coche i {
+    animation: iconSpin 500ms;
+}
+
+.conteneur-articles:hover h3 {
+    padding-right: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.conteneur-articles p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.conteneur-articles:hover {
+    cursor: pointer;
+}
+
+/* Bouton 'Commander' */
+
+.position-bouton-commander {
+    margin-top: 50px;
+    padding-bottom: 70px;
+}
+
+.bouton-commander {
+    background-image: linear-gradient(var(--couleur-secondaire), var(--couleur-primaire));
+    padding: 15px 50px;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgb(204, 204, 204);
+    border-radius: 30px;
+    font-size: medium;
+}
+
+.bouton-commander:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+    box-shadow: 0px 0px 10px 0px rgb(160, 160, 160);
+    transition: 250ms ease-in-out;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    background-color: rgb(53, 53, 53);
+    padding: 30px 0px 25px 0px;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.proprietes-footer-ohmyfood {
+    font-size: 1.17em;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.gap-10px {
+    gap: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 30px
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+footer p:hover {
+    cursor: pointer;
+}
+
+.gap-footer {
+    gap: 16.5px;
+}
