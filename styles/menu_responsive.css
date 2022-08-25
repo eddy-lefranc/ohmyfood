@@ -10,7 +10,7 @@
 
 }
 
-@media all and (max-width: 300px) {
+@media all and (max-width: 316px) {
 
     .conteneur-articles h3, p {
         font-size: 0.9375em;
