@@ -103,8 +103,7 @@ a {
     inset: 0px;
     z-index: 0;
     opacity: 0.9;
-    animation: fadeOut 3s forwards; 
-    transform-origin: top;
+    animation: fadeOut 3s forwards;
 }
 
 @keyframes fadeOut {
