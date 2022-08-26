@@ -98,12 +98,12 @@ a {
 
 /* Loading Spinner */
 
-.loader {
+.filtre-loader {
     height: 100vh;
     inset: 0px;
     z-index: 0;
     opacity: 0.9;
-    animation: fadeOut 2s 2s forwards; 
+    animation: fadeOut 2s forwards; 
     transform-origin: top;
 }
 
@@ -113,7 +113,7 @@ a {
 }
 }
 
-.spinner {
+.loader {
     background: var(--couleur-primaire);
     border: 5px solid var(--couleur-tertiaire);
     border-top: 5px solid var(--couleur-secondaire);
