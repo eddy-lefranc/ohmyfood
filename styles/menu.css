@@ -145,7 +145,7 @@ a {
     font-weight: normal;
     border-bottom: 4px solid var(--couleur-tertiaire);
     width: 13%;
-    padding-bottom: 1%;
+    padding-bottom: 4px;
 }
 
 .conteneur-articles {
