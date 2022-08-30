@@ -143,9 +143,6 @@ a {
 .entrees-plats-desserts {
     margin-left: 15px;
     font-weight: normal;
-}
-
-.bordure {
     border-bottom: 4px solid var(--couleur-tertiaire);
     width: 13%;
     padding-bottom: 1%;
